@@ -49,6 +49,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'ajmwagar/vim-deus'
+""Plug 'Badacadabra/vim-archery'
+""Plug 'nanotech/jellybeans.vim'
 
 Plug 'pangloss/vim-javascript'    " JavaScript support
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
@@ -59,8 +61,14 @@ Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimfiler.vim'
 Plug 'mattn/emmet-vim'
 
+" add this line to your .vimrc file
+"Plug 'mattn/emmet-vim'
 
-call plug#end()"
+"vim notes
+"Plug 'xolox/vim-notes'
+"Plug 'xolox/vim-misc'
+
+"call plug#end()"
 
 
 " Referenced here: http://www.benorenstein.com/blog/your-first-vimrc-should-be-nearly-empty/
@@ -119,8 +127,21 @@ let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
+""colorscheme archery
+""colorscheme jellybeans
 colorscheme deus
+"hi Normal guibg=NONE ctermbg=NONE
+
+"vim notes
+"let g:notes_directories = ['~/Documentos/notesjd']
 
 "autocmd vimenter * NERDTree
 "let g:vimfiler_as_default_explorer = 1
 
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
